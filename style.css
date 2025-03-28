@@ -1,24 +1,67 @@
-.flex-parent{
-display: flex;
-
-flex-direction: row;
-
-justify-content: space-between;
-
-align-items: stretch;
-
-flex-wrap: wrap;
-
-align-content: center;
-
-min-height: 500px;
-max-height: 600px;
-background-color: aqua;
-font-size: 24px;
+.product {
+    font-size: 30px;
+    width: 100%;
+    min-width: 400px;
+    max-width: 700px;
+    margin: auto;
+    background-color: #eee;
+    color: #444; 
+    font-family: sans-serif;
 }
-.flex-child{
-    margin: 10px;
-    padding: 20px;
-    background-color: chocolate;
+.product a {
+  color: inherit;
 }
-    
+
+.flex-parent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 0 20px; */
+  border-bottom: 2px solid #ccc;
+}
+div.border-none {
+  border-bottom: none;
+}
+.flex-parent> span{
+    padding-right: 20px;
+    font-size: 1.5em;
+}
+.back {
+  padding: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.product-pic {
+  width: 40%;
+  border-bottom: 2px solid #ccc;
+}
+.product-info {
+  flex: 0 1 60%;
+  padding-left: 20px;
+}
+.product-info>h2,
+.product-info>h3{
+    margin: 0;
+    text-transform: uppercase;
+}
+.product-info>h3{
+    font-weight: 100;
+    font-size: 0.8em;
+}
+.product-price{
+    font-weight: 100;
+    font-size: 2.5em;
+    margin: 0.5em 0;
+}
+p{
+    line-height: 1.8;
+}
+.group-btn>button{
+    width: 45%;
+    font-size: 1.2em;
+    padding: 0.6em;
+    border: 1px solid #666;
+    text-transform: uppercase;
+    color:inherit;
+    margin-right: 10px;
+}
